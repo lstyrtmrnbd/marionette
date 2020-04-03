@@ -167,6 +167,7 @@ SCRIPT
 
 (define/contract (page-interactive? p)
   (-> page? boolean?)
+
   (if (member (page-readystate p) '("interactive" "complete"))
       #t
       #f))
